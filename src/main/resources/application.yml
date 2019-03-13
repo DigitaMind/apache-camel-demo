@@ -1,0 +1,25 @@
+#logging.config=classpath:logback.xml
+
+server:
+  port: 1001
+  address: 0.0.0.0
+camel:
+  springboot:
+    name: ServicesRest
+management:
+  server:
+    port: 8081
+    address: 0.0.0.0
+  endpoints:
+    enabled-by-default: false
+  endpoint:
+    health:
+      enabled: true
+endpoints:
+
+quickstart:
+  generateOrderPeriod: 10s
+  processOrderPeriod: 30s
+demo:
+  api:
+    path: '/camel'
